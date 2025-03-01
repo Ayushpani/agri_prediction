@@ -3,8 +3,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: #FFFFFF;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(135deg, #FFFFFF, #F9FAFB);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -22,11 +22,12 @@
     padding: 0.75rem;
     border-radius: 50%;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
   }
   
   .menu-button:hover {
-    background: #26C6DA22;
+    background: #10B98122;
+    transform: scale(1.1);
   }
   
   .logo {
@@ -36,18 +37,19 @@
   }
   
   .logo-img {
-    height: 48px;
+    height: 80px; /* Increased from 50px to 80px */
+    width: auto; /* Maintain aspect ratio */
     transition: transform 0.3s ease;
   }
   
   .logo:hover .logo-img {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Still scales up on hover */
   }
   
   .logo h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 700;
-    color: #1A202C;
+    color: #111827;
   }
   
   .theme-toggle {
@@ -56,15 +58,20 @@
     padding: 0.75rem;
     border-radius: 50%;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
   }
   
   .theme-toggle:hover {
-    background: #5C6BC022;
+    background: #1E3A8A22;
+    transform: scale(1.1);
   }
   
   @media (max-width: 768px) {
     .header { padding: 1rem; }
-    .logo-img { height: 36px; }
+    .logo-img { height: 60px; } /* Slightly smaller on tablets */
     .logo h1 { font-size: 1.25rem; }
+  }
+  
+  @media (max-width: 480px) {
+    .logo-img { height: 48px; } /* Adjust for mobile */
   }
