@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Menu, Sun, Moon } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
+import LogoImage from "./—Pngtree—elegant sprout on a and_3554505.png"; // Import the image at the top
 import "../styles/header.css";
 
 const Header = ({ toggleSidebar }) => {
@@ -25,11 +26,11 @@ const Header = ({ toggleSidebar }) => {
         </motion.button>
         <motion.div
           className="logo"
-          initial={{ scale: 0.8, opacity: 0 }}
+          initial={{ scale: 3, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
         >
-          <img src="/logo.svg" alt="Agri Price Forecast Logo" className="logo-img" />
+          <img src={LogoImage} alt="Agri Price Forecast Logo" className="logo-img" />
           <h1 style={{ color: theme.text }}>Agri Price Forecast</h1>
         </motion.div>
       </div>
