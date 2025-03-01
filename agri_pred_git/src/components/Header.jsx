@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Menu, Sun, Moon } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
-import LogoImage from "./—Pngtree—elegant sprout on a and_3554505.png"; // Import the image at the top
+import LogoImage from "./logo.png"; // Import the image at the top
 import "../styles/header.css";
 
 const Header = ({ toggleSidebar }) => {
