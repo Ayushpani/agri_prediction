@@ -19,27 +19,17 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-          <h4>Contact</h4>
+          <h4>Made by:</h4>
           <div className="contact-links">
-            <a href="mailto:info@agripriceforecast.in">
-              <Mail size={16} />
-              <span>info@agripriceforecast.in</span>
-            </a>
-            <a href="tel:+911234567890">
-              <Phone size={16} />
-              <span>+91 123 456 7890</span>
-            </a>
+            TEAM 0 Error
           </div>
         </div>
 
         <div className="footer-section">
           <h4>Resources</h4>
           <div className="resource-links">
-            <a href="#">
-              <FileText size={16} />
-              <span>Documentation</span>
-            </a>
-            <a href="#">
+            
+            <a href="https://github.com/Ayushpani/agri_prediction">
               <Github size={16} />
               <span>Source Code</span>
             </a>
